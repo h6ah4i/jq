@@ -23,7 +23,7 @@ struct jv_refcnt;
 typedef struct {
   unsigned char kind_flags;
   unsigned char pad_;
-  unsigned short offset;  /* array offsets */
+  unsigned int offset;  /* array offsets */
   int size;
   union {
     struct jv_refcnt* ptr;
